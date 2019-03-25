@@ -1,0 +1,73 @@
+
+
+/* iphone 5 viewport */
+
+@media screen and (max-width: 400px) {
+
+
+}
+
+
+@media screen and (min-width: 401px) {
+
+}
+
+/* most mobile viewports */
+
+@media screen and (min-width: 550px) {
+
+
+}
+
+
+@media screen and (min-width: 549px) {
+
+
+
+  }
+@media screen and (max-width: 748px) {
+
+
+}
+
+@media screen and (min-width: 749px) {
+      #toggle-button {
+        display: none;
+    }
+
+
+}
+/* mid-range viewport
+   adds padding to container titles & descriptions */
+
+@media screen and (min-width: 700px) {
+
+
+  }
+
+
+@media screen and (min-width: 800px) {
+
+
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 900px) {
+
+
+}
+
+@media screen and (min-width: 950px) {
+
+}
+
+@media screen and (min-width: 1050px) {
+
+}
+
+@media screen and (min-width: 1150px) {
+  
+}
