@@ -10,6 +10,7 @@ header, nav, footer, section, article, div {
 
 body {
   background-color: #171717;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ul {
@@ -38,12 +39,12 @@ header {
 
 header div {
   width: 30%;
+  text-align: center;
 }
 
 header div img {
   max-width: 200px;
   padding-left: 20px;
-  padding-top: 5px;
 }
 
 header nav {
@@ -55,10 +56,10 @@ header nav ul li {
   display: inline-block;
   padding-top: 40px;
   padding-right: 40px;
-  font-size: 22px;
+  font-size: 16px;
 }
 
-/*** Main Section */
+/*** Main Section - About Us*/
 
 main {
   position: relative;
@@ -82,7 +83,7 @@ main div {
 main div h2 {
   font-size: 82px;
   line-height: 84px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* First section **/
@@ -92,11 +93,10 @@ section {
   color: #fff;
   padding: 150px 25px 50px;
   width: 100%;
-
 }
 
 section h2 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 48px;
   line-height: 1.35em;
   letter-spacing: .02em;
@@ -114,7 +114,6 @@ section p {
   line-height: 25px;
   width: 85%;
   margin: 0 auto;
-
 }
 
 #satisfaction {
@@ -126,6 +125,8 @@ section p {
   padding-top: 225px;
   padding-bottom: 225px;
 }
+
+/* Services Boxes on Home page */
 
 article {
   width: 80%;
@@ -161,55 +162,69 @@ article {
   padding: 3px 20px;
   width: 100%;
   font-size: 18px;
+  letter-spacing: 1px;
   text-align: center;
 }
 
-/* Home Services Section */
 
-.home-services {
-  background-image: url("https://images.pexels.com/photos/164745/pexels-photo-164745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-size: cover;
+/* Clients Section */
+
+.client-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.35em;
+  letter-spacing: .02em;
+  text-transform: uppercase;
   text-align: center;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  width: 85%;
+  margin: 0 auto;
+  color: #fff;
+  width: 80%;
+}
+
+.client-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
   width: 100%;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-color: #fff;
+  margin: 0 auto;
 }
 
-.button-container {
-  width: 33%;
-  padding: 17px;
+.client {
+  width: 12.5%;
+  vertical-align: bottom;
+  padding: 20px;
 }
 
-.button-container button {
-  padding: 17px 40px;
-  border-radius: 4px;
-  border: none;
-  background-image: linear-gradient(to right,#b8cbb8 0,#b8cbb8 0,#b465da 0,#cf6cc9 33%,#ee609c 66%,#ee609c 100%);
+.client img {
+  width: 100%;
+  max-width: 125px;
 }
 
-.button-container button:hover {
-  cursor: pointer;
-  background: linear-gradient(
-                     rgba(20,20,20, .5),
-                     rgba(20,20,20, .5));
-  border: .5px solid #b465da;
-}
-
-.button-container button a {
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
 
 /*  Get Social Section */
 
 .get-social-container {
-  background-color: #171717;
-  color: #cdcdcd;
-  padding: 50px 10px;
+  width: 100%;
+  padding: 50px 0 40px;
   text-align: center;
+  background-color: #1f1f1f;
+  color: #cdcdcd;
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.35em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 #pixlee_container {
@@ -267,6 +282,10 @@ footer {
   color: rgba(255,255,255,.4);
 }
 
+.footer-nav p a {
+  color: rgba(255,255,255,.4);
+}
+
 .footer-nav ul li {
   padding-bottom: 15px;
 }
@@ -306,6 +325,146 @@ footer {
 .footer-copy a:visited {
   color: rgba(255,255,255,.4);
 }
+
+#floating-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: grey;
+  padding: 3px;
+  width: 100%;
+  text-align: left;
+}
+
+#floating-menu img {
+  max-width: 30px;
+}
+
+.mail-icon {
+  width: 28px;
+  padding-left: 30px;
+}
+
+/* Rentals Page */
+
+.rental-main-title {
+  color: #cdcdcd;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 100px 0 50px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+.rental-main-title p {
+  width: 70%;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: left;
+  text-transform: none;
+}
+
+
+
+/* Table Section */
+
+#table-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #34495E;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.row-titles {
+  color: #dd5;
+}
+
+.column-one {
+  text-align: left;
+}
+
+#table-container td,
+#table-container th {
+  padding: 10px;
+}
+
+#table-container span {
+  font-size: 14px;
+  color: grey;
+}
+
+/* Contact Page */
+
+.contact-container {
+  color: #cdcdcd;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+.contact-container h2 {
+  padding-bottom: 50px;
+}
+
+.contact-container p {
+  width: 70%;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 20px 0 10px;
+  text-align: center;
+  text-transform: none;
+}
+
+.form-container {
+  margin-top: 40px;
+}
+
+/* Production page */
+
+.production-video-container {
+  width: 100%;
+}
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+text-align: center;
+width: 80%;
+margin: 0 auto;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+
+
 
 
 /* Menu invisible unless bigger viewport, media query */
@@ -443,8 +602,7 @@ footer {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 20px;
-  line-height: 35px
-  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  line-height: 35px;
   font-weight: 300;
   text-align: center;
 }
@@ -454,11 +612,11 @@ footer {
   width: 100%;
   text-transform: uppercase;
   font-size: 35px;
+  line-height: 36px;
   padding-top: 10px;
-  padding-bottom: 20px
   letter-spacing: 2px;
-  font-family: 'Playfair Display', serif;
   font-weight: 400;
+  color: #fff;
 }
 
 
@@ -470,13 +628,13 @@ footer {
   position: relative;
   height: 100%;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .overlay ul li {
   display: block;
-  height: 20px;
+  height: 10px;
   height: auto;
-  min-height: 40px;
+  min-height: 30px;
   position: relative;
   opacity: 0;
   width: 100%;
